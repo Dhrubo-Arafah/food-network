@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* basic css */
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .container{
     width: 1140px;
@@ -14,7 +14,9 @@
     align-items: center;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.6
 }
 .left, .right{
     width: 45%;
@@ -27,10 +29,13 @@ h1, h2{
     color: rgb(58, 58, 58);
     text-transform: capitalize;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 45px;
 }
 h2{
     font-size: 40px;
+}
+h3{
+    font-size: 25px;
 }
 .button{
     padding: 15px 25px;
@@ -45,13 +50,11 @@ span{
 }
 p{
     width: 80%;
-    text-align: justify;
 }
 
 /* hero section start */
 #hero p{
     color: rgb(68, 68, 68);
-    font-weight: 600;
     margin: 20px 0;
 }
 /* hero section end */
@@ -73,19 +76,39 @@ padding-top: 75px;
 #recipe, #trending{
  padding: 60px 0;
 }
+
+.single h3{
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 800;
+}
+
 .info h2, .info p{
     padding-bottom: 20px;
     text-align: center;
-    width: 50%;
+    width: 40%;
     margin: auto;
 }
 #recipe .single, #trending .single{
     width: 28%;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 25px;
     box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
     height: auto;
 }
+
+ #recipe .single p,
+ #trending .single p{
+      width: 100%;
+      margin: 5px 0 20px 0;
+      text-align: left;
+  }
+
+#recipe img, #trending img{
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
 .boxes .container{
     height: auto;
 }
@@ -98,7 +121,7 @@ padding-top: 75px;
 #statistics .container{
     box-shadow: 1px 2px 10px 5px rgba(0, 0, 0, 0.1);
     text-transform: capitalize;
-    border-radius: 15px;
+    border-radius: 25px;
     justify-content: space-around;
     height: 200px;
 }
@@ -127,10 +150,6 @@ background-attachment: fixed;
      text-align: center;
      padding-bottom: 25px;
  }
-
-  #trending .single p{
-      width: 100%;
-  }
 /* trending section end*/
 
 /* Download section start  */
@@ -168,12 +187,20 @@ background-attachment: fixed;
 }
 #footer .container{
     flex-direction: column;
+    text-align: center;
     height: auto;
     width: 40%;
     margin: auto;
-    padding: 50px;
+    padding: 50px 0;
+}
+#footer h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(85, 85, 85);
 }
 #footer p{
     color: white;
+    font-size: 14px;
+    font-weight: 300;
 }
 /* footer section end */
