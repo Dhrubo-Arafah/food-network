@@ -42,9 +42,16 @@ h3{
     text-decoration: none;
     color: white;
     background: linear-gradient(to right, rgb(255, 136, 0), orangered);
-    border-radius: 25px;
+    border-radius: 22px;
     box-shadow: 1px 2px 10px 5px rgba(255, 59, 0, 0.2);
+    font-weight: 700;
 }
+
+.button:hover{
+    transition: 0.3s;
+    background: linear-gradient(to left, rgb(255, 136, 0), orangered);
+}
+
 span{
     color: orangered;
 }
@@ -151,12 +158,12 @@ input:focus{
     background: url('./images/bg4.png') no-repeat center;
     height: 100%;
     background-attachment: fixed;
-    background-position: left;
 }
 
 input[type=submit]{
     border: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
 input[type=email]{
@@ -196,7 +203,7 @@ input[type=email]{
      border-radius: 15px;
 }
 #download .left{
-    width:40%
+    width:40%;
 }
 #download .right{
     width:60%
