@@ -1,0 +1,109 @@
+@media only screen and (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .button{
+ padding: 10px;
+ border-radius: 15px;
+    }
+    nav .container{
+        text-align: center;
+    }
+    nav .right{
+        width: 100%;
+    }
+    nav {
+        position: sticky;
+        padding: 20px 0;
+    }
+  
+     p{
+       width: 100%;
+    }
+#hero{
+    margin-top: 20px;
+}
+    #about{
+        height: auto;
+        background-image: url('./images/bg1.png');
+        background-size: cover;
+    }
+    #about .container{
+        height: auto;
+        padding: 25px 0 0px;
+        flex-direction: column-reverse;
+    }
+#about .left{
+    text-align: center;
+    margin: 30px 0 0;
+}
+    #about img{
+       padding: 0;
+       width: 60%;
+    }
+#recipe .single, #recipe .info, #recipe p, #recipe h2{
+      width: 80%;
+     margin: auto;
+    }
+    #recipe .single{
+        margin-top: 20px;
+    }
+#newsletter .container{
+     justify-content: space-around;
+}
+    #newsletter .left{
+        background-attachment: inherit;
+        width: 100%;
+        background-size: contain;
+       height: 50%;
+    }
+  #newsletter .button{
+      padding: 13px 10px;
+  }
+
+   #statistics{
+       text-align: center;
+       width: 100%;
+       margin: 20px 0;
+   }
+  #statistics .single{
+      margin: 20px;
+      width: 100%;
+      padding: 20px 0;
+  }
+      #statistics .container{
+height: auto;
+      }
+#download .container{
+    width: 90%;
+    margin: 20px auto;
+padding:  0;
+}
+#download .left, #download .right{
+    width: 100%;
+}
+#download .button-group{
+    text-align: center;
+    width: 100%;
+   justify-content: space-around;
+}
+#download .button-group img{
+    width: 150px;
+}
+#download h2, #download p{
+width: 90% ;
+margin: 20px auto;
+}
+#footer .container{
+    width: 100%;
+}
+}
